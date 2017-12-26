@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8173F4B0-63A2-44A5-9DE7-77A82145FA8D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OlimpicProject</RootNamespace>
+    <AssemblyName>OlimpicProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ALGORITHM\GRAPH\Dijkstra.cs" />
+    <Compile Include="ALGORITHM\LONG_ARITHMETHIC\LongNumberMultiplyShortNumber.cs" />
+    <Compile Include="ALGORITHM\LONG_ARITHMETHIC\NumberMinusNumber.cs" />
+    <Compile Include="ALGORITHM\LONG_ARITHMETHIC\NumberPlusNumber.cs" />
+    <Compile Include="ALGORITHM\SEARCH\SearchFalseCoin.cs" />
+    <Compile Include="ALGORITHM\SORT\AlgorithmNarfyani.cs" />
+    <Compile Include="ALGORITHM\SORT\MergeSort.cs" />
+    <Compile Include="ALGORITHM\SORT\QuickSort.cs" />
+    <Compile Include="ALGORITHM\SORT\SortCompareASCIIForString.cs" />
+    <Compile Include="ALGORITHM\SORT\SortingCounting.cs" />
+    <Compile Include="ALGORITHM\TRANSFORM\SystemNumber.cs" />
+    <Compile Include="BasicMAthematic\ArithmeticProgression.cs" />
+    <Compile Include="BasicMAthematic\Box.cs" />
+    <Compile Include="BasicMAthematic\Cells.cs" />
+    <Compile Include="BasicMAthematic\Equation.cs" />
+    <Compile Include="BasicMAthematic\PuzzleQueens.cs" />
+    <Compile Include="BasicMAthematic\Riddle.cs" />
+    <Compile Include="BOOK_F_MENSHIKOVA\T1\IncreasingSubSequence.cs" />
+    <Compile Include="BOOK_F_MENSHIKOVA\T1\PrimeNumber.cs" />
+    <Compile Include="BOOK_F_MENSHIKOVA\T2\Route.cs" />
+    <Compile Include="BOOK_F_MENSHIKOVA\T3\MoneyBox.cs" />
+    <Compile Include="Combinatorics\Card.cs" />
+    <Compile Include="Combinatorics\Chess2.cs" />
+    <Compile Include="Combinatorics\CollectingLables.cs" />
+    <Compile Include="Combinatorics\CountTriangle.cs" />
+    <Compile Include="Combinatorics\Inverse.cs" />
+    <Compile Include="Combinatorics\NextInvers.cs" />
+    <Compile Include="Combinatorics\Numbers.cs" />
+    <Compile Include="Combinatorics\Patterns.cs" />
+    <Compile Include="Combinatorics\PointsOnBonesDominoes.cs" />
+    <Compile Include="Combinatorics\Salads.cs" />
+    <Compile Include="Dynamic programming\Agents.cs" />
+    <Compile Include="Dynamic programming\AllRussianOlympiadInInformatics.cs" />
+    <Compile Include="Dynamic programming\BallOnStairs.cs" />
+    <Compile Include="Dynamic programming\Bee.cs" />
+    <Compile Include="Dynamic programming\Bunny.cs" />
+    <Compile Include="Dynamic programming\BuyTicket.cs" />
+    <Compile Include="Dynamic programming\Carnation.cs" />
+    <Compile Include="Dynamic programming\ComputerGame.cs" />
+    <Compile Include="Dynamic programming\CountRouteInLabyrint.cs" />
+    <Compile Include="Dynamic programming\Delivery.cs" />
+    <Compile Include="Dynamic programming\Ents.cs" />
+    <Compile Include="Dynamic programming\Farmer.cs" />
+    <Compile Include="Dynamic programming\Frog.cs" />
+    <Compile Include="Dynamic programming\GardenerArtist.cs" />
+    <Compile Include="Dynamic programming\Gungster.cs" />
+    <Compile Include="Dynamic programming\JustRightOrDown.cs" />
+    <Compile Include="Dynamic programming\MaximumSubsequence.cs" />
+    <Compile Include="Dynamic programming\Message.cs" />
+    <Compile Include="Dynamic programming\MinimalPathInTable.cs" />
+    <Compile Include="Dynamic programming\MoneyBox.cs" />
+    <Compile Include="Dynamic programming\Pizza.cs" />
+    <Compile Include="Dynamic programming\Rectangle.cs" />
+    <Compile Include="Dynamic programming\Route.cs" />
+    <Compile Include="Dynamic programming\Route2.cs" />
+    <Compile Include="Dynamic programming\Sequence01.cs" />
+    <Compile Include="Dynamic programming\Shop.cs" />
+    <Compile Include="Dynamic programming\SMS.cs" />
+    <Compile Include="Dynamic programming\Stairs.cs" />
+    <Compile Include="Dynamic programming\Sum.cs" />
+    <Compile Include="Dynamic programming\WithoutTwoZeroInRow.cs" />
+    <Compile Include="ForGenerationTest.cs" />
+    <Compile Include="Geometry\Biathlon.cs" />
+    <Compile Include="Geometry\Checkers2.cs" />
+    <Compile Include="Geometry\GopherAndDog.cs" />
+    <Compile Include="Geometry\LenghtOfSegment.cs" />
+    <Compile Include="Geometry\Symmetry.cs" />
+    <Compile Include="Geometry\Traps.cs" />
+    <Compile Include="Geometry\TwoCircles.cs" />
+    <Compile Include="GraphTheory\AlgorithmDeikstra.cs" />
+    <Compile Include="GraphTheory\AlgorithmFloida.cs" />
+    <Compile Include="GraphTheory\AlgorithmFloida2.cs" />
+    <Compile Include="GraphTheory\AlgoritmFordaBelmana.cs" />
+    <Compile Include="GraphTheory\Banquet.cs" />
+    <Compile Include="GraphTheory\Beds.cs" />
+    <Compile Include="GraphTheory\Bus.cs" />
+    <Compile Include="GraphTheory\ColorsLabyrinth.cs" />
+    <Compile Include="GraphTheory\ColorsRain.cs" />
+    <Compile Include="GraphTheory\Construction.cs" />
+    <Compile Include="GraphTheory\CycleNegativeWeight.cs" />
+    <Compile Include="GraphTheory\Flap.cs" />
+    <Compile Include="GraphTheory\Friends.cs" />
+    <Compile Include="GraphTheory\HomeByTrain.cs" />
+    <Compile Include="GraphTheory\Investigation.cs" />
+    <Compile Include="GraphTheory\JavaChallenge.cs" />
+    <Compile Include="GraphTheory\Labyrinth.cs" />
+    <Compile Include="GraphTheory\Lines.cs" />
+    <Compile Include="GraphTheory\Lines2.cs" />
+    <Compile Include="GraphTheory\MinCostTravel.cs" />
+    <Compile Include="GraphTheory\MinimumFrame.cs" />
+    <Compile Include="GraphTheory\Mockery.cs" />
+    <Compile Include="GraphTheory\MythicalChess.cs" />
+    <Compile Include="GraphTheory\NearestNumber.cs" />
+    <Compile Include="GraphTheory\OneHorse.cs" />
+    <Compile Include="GraphTheory\PathHorse.cs" />
+    <Compile Include="GraphTheory\Paths.cs" />
+    <Compile Include="GraphTheory\Plate.cs" />
+    <Compile Include="GraphTheory\Race.cs" />
+    <Compile Include="GraphTheory\Recursion.cs" />
+    <Compile Include="GraphTheory\Refills.cs" />
+    <Compile Include="GraphTheory\Roads.cs" />
+    <Compile Include="GraphTheory\TrafficLights.cs" />
+    <Compile Include="GraphTheory\Tree.cs" />
+    <Compile Include="GraphTheory\TwoHorse.cs" />
+    <Compile Include="GreedyAlgorithm\BrakeMechanism.cs" />
+    <Compile Include="GreedyAlgorithm\Code.cs" />
+    <Compile Include="GreedyAlgorithm\ComputationalyBiology.cs" />
+    <Compile Include="GreedyAlgorithm\FloatingNumber.cs" />
+    <Compile Include="GreedyAlgorithm\FunWithTheMeter.cs" />
+    <Compile Include="GreedyAlgorithm\HairyBusiness.cs" />
+    <Compile Include="GreedyAlgorithm\PlayTheFool.cs" />
+    <Compile Include="GreedyAlgorithm\Puzzle.cs" />
+    <Compile Include="GreedyAlgorithm\Signature.cs" />
+    <Compile Include="GreedyAlgorithm\Summa2.cs" />
+    <Compile Include="IntegerArithmetic\AgainFibonach.cs" />
+    <Compile Include="IntegerArithmetic\BadDiv.cs" />
+    <Compile Include="IntegerArithmetic\BitRevers.cs" />
+    <Compile Include="IntegerArithmetic\Chees.cs" />
+    <Compile Include="IntegerArithmetic\ColoringMultiplicationTable.cs" />
+    <Compile Include="IntegerArithmetic\CompositionNumbers.cs" />
+    <Compile Include="IntegerArithmetic\ConstantCaprecara.cs" />
+    <Compile Include="IntegerArithmetic\Cutlets.cs" />
+    <Compile Include="IntegerArithmetic\Divination.cs" />
+    <Compile Include="IntegerArithmetic\Dragons.cs" />
+    <Compile Include="IntegerArithmetic\Factorials.cs" />
+    <Compile Include="IntegerArithmetic\Fibonacci.cs" />
+    <Compile Include="IntegerArithmetic\Fibonacci2.cs" />
+    <Compile Include="IntegerArithmetic\FiveFiveTwentyFive.cs" />
+    <Compile Include="IntegerArithmetic\FoxAliceAndCatBasilio.cs" />
+    <Compile Include="IntegerArithmetic\FriendsNumbers.cs" />
+    <Compile Include="IntegerArithmetic\GoodDev.cs" />
+    <Compile Include="IntegerArithmetic\HappyTicket.cs" />
+    <Compile Include="IntegerArithmetic\InOneStepFromHappiness.cs" />
+    <Compile Include="IntegerArithmetic\LastDigitAB.cs" />
+    <Compile Include="IntegerArithmetic\MixedNumber.cs" />
+    <Compile Include="IntegerArithmetic\NiceNumbers2.cs" />
+    <Compile Include="IntegerArithmetic\NOD.cs" />
+    <Compile Include="IntegerArithmetic\NOK.cs" />
+    <Compile Include="IntegerArithmetic\NumbersWithouttheSaneNumbers.cs" />
+    <Compile Include="IntegerArithmetic\PostulateOfBertran.cs" />
+    <Compile Include="IntegerArithmetic\PrimeNumbers.cs" />
+    <Compile Include="IntegerArithmetic\Severability11.cs" />
+    <Compile Include="IntegerArithmetic\SimpleCalculation.cs" />
+    <Compile Include="IntegerArithmetic\SimplificationsOfNumbers.cs" />
+    <Compile Include="IntegerArithmetic\SingleNOD.cs" />
+    <Compile Include="IntegerArithmetic\Summa.cs" />
+    <Compile Include="IntegerArithmetic\SuperPrimeNumbers.cs" />
+    <Compile Include="IntegerArithmetic\Units.cs" />
+    <Compile Include="LongArithmetic\2inN.cs" />
+    <Compile Include="LongArithmetic\AB.cs" />
+    <Compile Include="LongArithmetic\AgainAplusB.cs" />
+    <Compile Include="LongArithmetic\AminusB.cs" />
+    <Compile Include="LongArithmetic\GoldAbba.cs" />
+    <Compile Include="MathematicalModeling\BirthDay.cs" />
+    <Compile Include="MathematicalModeling\Birthday2.cs" />
+    <Compile Include="MathematicalModeling\Bowling.cs" />
+    <Compile Include="MathematicalModeling\Bug.cs" />
+    <Compile Include="MathematicalModeling\Clock.cs" />
+    <Compile Include="MathematicalModeling\ClockWithaFight.cs" />
+    <Compile Include="MathematicalModeling\CommunityRobots.cs" />
+    <Compile Include="MathematicalModeling\Date.cs" />
+    <Compile Include="MathematicalModeling\Dragon.cs" />
+    <Compile Include="MathematicalModeling\Fire.cs" />
+    <Compile Include="MathematicalModeling\Fishmans2.cs" />
+    <Compile Include="MathematicalModeling\Fishmans.cs" />
+    <Compile Include="MathematicalModeling\GameBashe.cs" />
+    <Compile Include="MathematicalModeling\GameToNumbers.cs" />
+    <Compile Include="MathematicalModeling\GameToStone.cs" />
+    <Compile Include="MathematicalModeling\Hexagon.cs" />
+    <Compile Include="MathematicalModeling\Honey.cs" />
+    <Compile Include="MathematicalModeling\MaxMinOneNumber.cs" />
+    <Compile Include="MathematicalModeling\MissionJosephusFlavius.cs" />
+    <Compile Include="MathematicalModeling\MyltiplicationGame.cs" />
+    <Compile Include="MathematicalModeling\Numbers.cs" />
+    <Compile Include="MathematicalModeling\PalindromeTime.cs" />
+    <Compile Include="MathematicalModeling\PoleVaulting.cs" />
+    <Compile Include="MathematicalModeling\PrinceAndDragon.cs" />
+    <Compile Include="MathematicalModeling\RobotK79.cs" />
+    <Compile Include="MathematicalModeling\Scoring.cs" />
+    <Compile Include="MathematicalModeling\Snake2.cs" />
+    <Compile Include="MathematicalModeling\SolitaireOldWomanShapoklyak.cs" />
+    <Compile Include="MathematicalModeling\StairsMM.cs" />
+    <Compile Include="MathematicalModeling\Thimbles.cs" />
+    <Compile Include="MathematicalModeling\WinnieThePooh.cs" />
+    <Compile Include="MathematicalModeling\WireTransfer.cs" />
+    <Compile Include="MathematicalModeling\WristWatch.cs" />
+    <Compile Include="ParsingString\Anagrams.cs" />
+    <Compile Include="ParsingString\Arrow.cs" />
+    <Compile Include="ParsingString\BullsAbdCow.cs" />
+    <Compile Include="ParsingString\DetectionLanguage.cs" />
+    <Compile Include="ParsingString\Dictionary_291.cs" />
+    <Compile Include="ParsingString\Encryption.cs" />
+    <Compile Include="ParsingString\EquationFor5thGrade.cs" />
+    <Compile Include="ParsingString\LuckyTicket2.cs" />
+    <Compile Include="ParsingString\NaturalNumbers.cs" />
+    <Compile Include="ParsingString\NumberBus.cs" />
+    <Compile Include="ParsingString\Numerologist.cs" />
+    <Compile Include="ParsingString\Permutation.cs" />
+    <Compile Include="ParsingString\Professor.cs" />
+    <Compile Include="ParsingString\RuneWords.cs" />
+    <Compile Include="ParsingString\StrangeLottery.cs" />
+    <Compile Include="ParsingString\Strings.cs" />
+    <Compile Include="ParsingString\SubstringOfSomeLetter.cs" />
+    <Compile Include="ParsingString\UnpackingString.cs" />
+    <Compile Include="ParsingString\Words.cs" />
+    <Compile Include="RecursionOverkill\Box.cs" />
+    <Compile Include="RecursionOverkill\Deletion.cs" />
+    <Compile Include="RecursionOverkill\Fraction.cs" />
+    <Compile Include="SortingAndSequence\Anagram.cs" />
+    <Compile Include="SortingAndSequence\Bell.cs" />
+    <Compile Include="SortingAndSequence\Decrypt.cs" />
+    <Compile Include="SortingAndSequence\DistanceHaming.cs" />
+    <Compile Include="SortingAndSequence\FastTrain.cs" />
+    <Compile Include="SortingAndSequence\Function.cs" />
+    <Compile Include="SortingAndSequence\GamblingShrek.cs" />
+    <Compile Include="RecursionOverkill\GiftSantaClaus.cs" />
+    <Compile Include="RecursionOverkill\Kpermutation.cs" />
+    <Compile Include="RecursionOverkill\ladder.cs" />
+    <Compile Include="RecursionOverkill\Permutation.cs" />
+    <Compile Include="RecursionOverkill\TwoPilesOfStones.cs" />
+    <Compile Include="RecursionOverkill\WeTwoHorseOnTheFieldGo.cs" />
+    <Compile Include="SortingAndSequence\CrisisBusiness.cs" />
+    <Compile Include="SortingAndSequence\Elections.cs" />
+    <Compile Include="IntegerArithmetic\Factorization.cs" />
+    <Compile Include="SortingAndSequence\Gods.cs" />
+    <Compile Include="SortingAndSequence\HomeWork.cs" />
+    <Compile Include="SortingAndSequence\InternetOlimpic.cs" />
+    <Compile Include="SortingAndSequence\IntersectionOfSets.cs" />
+    <Compile Include="SortingAndSequence\JivoiJournal.cs" />
+    <Compile Include="SortingAndSequence\LexicographicOrderOfNumbers.cs" />
+    <Compile Include="SortingAndSequence\Poker.cs" />
+    <Compile Include="SortingAndSequence\PrimaryRow.cs" />
+    <Compile Include="SortingAndSequence\ShortSequence.cs" />
+    <Compile Include="SortingAndSequence\SimilarArray.cs" />
+    <Compile Include="SortingAndSequence\SortingCounting.cs" />
+    <Compile Include="SortingAndSequence\SortingTime.cs" />
+    <Compile Include="SortingAndSequence\Statistics.cs" />
+    <Compile Include="SortingAndSequence\TopCoder.cs" />
+    <Compile Include="SortingAndSequence\TransformationSequence2.cs" />
+    <Compile Include="SortingAndSequence\TwoSequence.cs" />
+    <Compile Include="SortingAndSequence\Wagon.cs" />
+    <Compile Include="SortingAndSequence\Wedding.cs" />
+    <Compile Include="TasksForBeginners\ACMWorldFinal.cs" />
+    <Compile Include="TasksForBeginners\ArivalTime.cs" />
+    <Compile Include="TasksForBeginners\BoltsAndNuts.cs" />
+    <Compile Include="TasksForBeginners\Bus2.cs" />
+    <Compile Include="TasksForBeginners\BusTour.cs" />
+    <Compile Include="TasksForBeginners\ChessKnight.cs" />
+    <Compile Include="TasksForBeginners\Circlesinnumbers.cs" />
+    <Compile Include="TasksForBeginners\CollectBlueBerries.cs" />
+    <Compile Include="TasksForBeginners\DayProgrammer.cs" />
+    <Compile Include="TasksForBeginners\Detals.cs" />
+    <Compile Include="TasksForBeginners\Elevator.cs" />
+    <Compile Include="TasksForBeginners\Enumeration.cs" />
+    <Compile Include="TasksForBeginners\ExtraterrestrialGuest.cs" />
+    <Compile Include="TasksForBeginners\Flowers.cs" />
+    <Compile Include="TasksForBeginners\FourDigitPalindrome.cs" />
+    <Compile Include="TasksForBeginners\GoldSand.cs" />
+    <Compile Include="TasksForBeginners\KeyBoard2.cs" />
+    <Compile Include="TasksForBeginners\LazyPerson.cs" />
+    <Compile Include="TasksForBeginners\LeftRecursion.cs" />
+    <Compile Include="TasksForBeginners\LowestNumberSystem.cs" />
+    <Compile Include="TasksForBeginners\Metro.cs" />
+    <Compile Include="TasksForBeginners\NEERC.cs" />
+    <Compile Include="TasksForBeginners\NotTelephone.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TasksForBeginners\Basketball.cs" />
+    <Compile Include="TasksForBeginners\BinaryNumbers.cs" />
+    <Compile Include="TasksForBeginners\Cake.cs" />
+    <Compile Include="TasksForBeginners\CoinsOR.cs" />
+    <Compile Include="TasksForBeginners\Cranes.cs" />
+    <Compile Include="TasksForBeginners\Eniya.cs" />
+    <Compile Include="TasksForBeginners\FiniteStateMachines.cs" />
+    <Compile Include="TasksForBeginners\HouseSchoolHouse.cs" />
+    <Compile Include="TasksForBeginners\KeyBoard.cs" />
+    <Compile Include="TasksForBeginners\MoreLess.cs" />
+    <Compile Include="TasksForBeginners\NumberE.cs" />
+    <Compile Include="TasksForBeginners\QueueVasilii.cs" />
+    <Compile Include="TasksForBeginners\RailWay.cs" />
+    <Compile Include="TasksForBeginners\Repair.cs" />
+    <Compile Include="TasksForBeginners\Salary.cs" />
+    <Compile Include="TasksForBeginners\AplusB.cs" />
+    <Compile Include="TasksForBeginners\Arithmetic.cs" />
+    <Compile Include="TasksForBeginners\Game.cs" />
+    <Compile Include="TasksForBeginners\SchoolAlgebra.cs" />
+    <Compile Include="TasksForBeginners\Subarrayarray.cs" />
+    <Compile Include="TasksForBeginners\SummaMaxAndMin.cs" />
+    <Compile Include="TasksForBeginners\SumModule.cs" />
+    <Compile Include="TasksForBeginners\Taxes.cs" />
+    <Compile Include="TasksForBeginners\Thaw.cs" />
+    <Compile Include="TasksForBeginners\Tourist.cs" />
+    <Compile Include="TasksForBeginners\Triangle3.cs" />
+    <Compile Include="TasksForBeginners\Turn.cs" />
+    <Compile Include="TasksForBeginners\TwoBandits.cs" />
+    <Compile Include="TasksForBeginners\Watermelons.cs" />
+    <Compile Include="TasksForBeginners\Zeros.cs" />
+    <Compile Include="TulaCodeCup2017\Final\GameWithNumbers.cs" />
+    <Compile Include="TulaCodeCup2017\Round1\ChineseDragons.cs" />
+    <Compile Include="TulaCodeCup2017\Round1\InterestingBiology.cs" />
+    <Compile Include="TulaCodeCup2017\Round1\PartOfTheWhole.cs" />
+    <Compile Include="TulaCodeCup2017\Round2\Coin.cs" />
+    <Compile Include="TulaCodeCup2017\Round2\GameWithBox.cs" />
+    <Compile Include="TulaCodeCup2017\Round3\Box.cs" />
+    <Compile Include="TulaCodeCup2017\Round3\CoinOnAChessboard.cs" />
+    <Compile Include="TulaCodeCup2017\Round3\HereAreTheLetter.cs" />
+    <Compile Include="TwoDimensionalArray\BaseTerror.cs" />
+    <Compile Include="TwoDimensionalArray\BattleShip2.cs" />
+    <Compile Include="TwoDimensionalArray\BlackAndWhiteGraphics.cs" />
+    <Compile Include="TwoDimensionalArray\Builders.cs" />
+    <Compile Include="TwoDimensionalArray\CheckForLikeness.cs" />
+    <Compile Include="TwoDimensionalArray\ChessBoard.cs" />
+    <Compile Include="TwoDimensionalArray\Construction.cs" />
+    <Compile Include="TwoDimensionalArray\ConvexHull.cs" />
+    <Compile Include="TwoDimensionalArray\LayingTiles.cs" />
+    <Compile Include="TwoDimensionalArray\Matrix.cs" />
+    <Compile Include="TwoDimensionalArray\MaxThree.cs" />
+    <Compile Include="TwoDimensionalArray\Painter.cs" />
+    <Compile Include="TwoDimensionalArray\SadlePoints.cs" />
+    <Compile Include="TwoDimensionalArray\Sapper.cs" />
+    <Compile Include="TwoDimensionalArray\ScoreBoard.cs" />
+    <Compile Include="TwoDimensionalArray\Snake.cs" />
+    <Compile Include="TwoDimensionalArray\Spiral.cs" />
+    <Compile Include="TwoDimensionalArray\Sudoku.cs" />
+    <Compile Include="TwoDimensionalArray\TheoryGame.cs" />
+    <Compile Include="TwoDimensionalArray\WarBase.cs" />
+    <Compile Include="Тестовые задачи\test3.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JavaScript1.js" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
